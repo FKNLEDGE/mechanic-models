@@ -30,6 +30,7 @@
 
 | 顺序 | 板块 | 给谁 / 什么时候看 |
 |---|---|---|
+| ⓪ 准备 | [00 · 新手上路](docs/00_新手上路/学习打卡清单.md) | 装环境、查符号/术语、看进度打卡（随时回来） |
 | ① **先读** | [01 · 小白教程](docs/01_小白教程/) | 零基础起步，四部连读建立全部直觉 |
 | ② 系统学 | [02 · 课程学习地图](docs/02_课程学习地图/) | 按 6 轮把 20 模型 + 7 框架学扎实，每轮配可运行练习 |
 | ③ 动手跑 | [03 · 动手实操包](docs/03_动手实操包/) | 在电脑上真跑 4 个 lab，把"读懂"变成"会做" |
@@ -40,6 +41,12 @@
 ---
 
 ## 完整目录
+
+### 00 · 新手上路（准备 + 随时回查的参考）
+- [学习打卡清单](docs/00_新手上路/学习打卡清单.md) — 进度表 + "只有一个周末"最短路径 + 难度分流 + "卡住了怎么办"。
+- [数学补给站](docs/00_新手上路/数学补给站.md) — 大白话讲清 `dC/dt`、`e`/exp、积分、特征值，兑现"只要会代数+指数"。
+- [术语速查表](docs/00_新手上路/术语表.md) — 每个硬词一句话 + 在哪学，读到不认识的词来这搜。
+- [安装与常见报错](docs/00_新手上路/安装与常见报错.md) — 一键装环境 + 8 个最常见报错对症解法（含 Windows 中文乱码、pcse 联网失败）。
 
 ### 01 · 小白教程（入门必读，四部连读）
 - [第1部分 · 模型怎么算、怎么搭](docs/01_小白教程/第1部分_模型怎么算怎么搭.md) — 浴缸和水管、`dC/dt=进水−k·C·f(T)·f(W)`、一步步往前挪、RothC 五个浴缸手算、软件三层架构。
@@ -92,14 +99,14 @@
 ### 跑实操包的代码
 
 ```bash
-cd docs/03_动手实操包
 python3 -m venv venv && source venv/bin/activate     # Windows: venv\Scripts\activate
-pip install numpy scipy pandas scikit-learn matplotlib
-pip install pcse          # Lab 2 的 WOFOST 用
-pip install SALib         # Lab 4 的 Sobol 敏感性分析用
+pip install -r requirements.txt                      # 一键装全部依赖（仓库根目录）
 
+cd docs/03_动手实操包
 python3 lab1_rothc_unittest.py        # 先跑这个：有标准答案，建立信心
 ```
+
+> 装不上 / 报错（尤其 Windows 中文乱码）？看 [安装与常见报错](docs/00_新手上路/安装与常见报错.md)。
 
 Lab 1 应当复现 Rothamsted 官方四个数（DPM 0.1140 / RPM 4.4455 / BIO 0.6542 / HUM 25.8423）。
 每轮课程的配套练习在 [`docs/02_课程学习地图/exercises/`](docs/02_课程学习地图/exercises/README.md)，`python3 round1_exercise.py` 起步。

@@ -41,6 +41,11 @@ Michaelis–Menten（米氏）方程描述酶催化反应速率如何随底物�
 - **S**：底物浓度（substrate concentration），在土壤里就是可分解的有机碳浓度。
 - **Km**：半饱和常数（half-saturation constant，又叫 Michaelis 常数）。它的物理意义非常直观：**当 S = Km 时，V 恰好等于 Vmax 的一半**。Km 越小，酶对底物的亲和力越高（很低的底物浓度就能跑到半速）。
 
+![Michaelis–Menten：底物少时近似一阶（∝S），底物多时饱和封顶到 Vmax。](../img/michaelis_menten.png)
+
+<small>↑ Michaelis–Menten：底物少时近似一阶（∝S），底物多时饱和封顶到 Vmax。</small>
+
+
 ### 1.2 收银台类比
 
 想象一家超市收银台。**顾客 = 底物 S，收银员 = 酶/微生物，结账速度 = V。**

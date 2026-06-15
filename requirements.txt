@@ -1,0 +1,16 @@
+# requirements.txt — 过程模型学习指南全部依赖
+# 一键安装：  pip install -r requirements.txt
+#
+# 4 个 lab（docs/03_动手实操包/）+ 6 个 Round 练习（docs/02_课程学习地图/exercises/）
+# 都只用下面这些库。建议先建一个干净的虚拟环境再装（见《安装与常见报错》）。
+
+numpy            # 全部脚本：数组与数值运算
+scipy            # Lab 4 标定（least_squares）、部分练习
+pandas           # Lab 3 读 CSV（换成你自己数据时）
+scikit-learn     # Lab 3/4、Round 6：随机森林、高斯过程
+matplotlib       # 可选：画图（不画也能跑，仅打印数字）
+SALib            # Lab 4：Sobol 敏感性分析
+pcse             # Lab 2：WOFOST（首次运行需联网下载作物参数 + 取 NASA POWER 气象）
+
+# 想把整份指南跑成网站（可选，非学习必需）：
+#   pip install mkdocs-material

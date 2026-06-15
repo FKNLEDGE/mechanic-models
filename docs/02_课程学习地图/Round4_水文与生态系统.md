@@ -294,6 +294,11 @@ print("最湿单元位置:", np.unravel_index(np.nanargmax(TWI[1:4,1:4]), (3,3))
 - **A**：净 CO₂ 同化速率（net assimilation，µmol·m⁻²·s⁻¹）。
 - **Ac**：**Rubisco 限制速率**（Rubisco-limited，酶促羧化能力封顶）。
 - **Aj**：**RuBP 再生 / 电子传递限制速率**（RuBP-regeneration / electron-transport-limited，由光驱动的电子传递 J 封顶）。
+
+![Farquhar A–Ci：低 Ci 受 Rubisco 限制，高 Ci 受光限制，净光合取两者较小值。](../img/a_ci_farquhar.png)
+
+<small>↑ Farquhar A–Ci：低 Ci 受 Rubisco 限制，高 Ci 受光限制，净光合取两者较小值。</small>
+
 - **Rd**：白天 / 暗呼吸（day / dark respiration），要扣掉。
 - **min(·)**：取两者中较小者——**谁是瓶颈，谁说了算**。
 
