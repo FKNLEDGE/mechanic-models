@@ -9,3 +9,6 @@ venv/
 
 # OS cruft
 .DS_Store
+
+# mkdocs build output
+site/

@@ -558,3 +558,16 @@ print(f"SOC 是否翻倍? 比值 = {eq2[0]/eq1[0]:.2f} (线性模型应=2.00)")
 - Wang Y.P. et al. (2014) Oscillatory behavior of two nonlinear microbial models of soil carbon decomposition. *Biogeosciences* 11:1817–1831.
 - He X., Abramoff R.Z., Abs E. et al. (2024) Model uncertainty obscures major driver of soil carbon. *Nature* 627:E1–E3.
 - "When and why microbial-explicit soil organic carbon models can be unstable" (2024) *Biogeosciences* 21:3441.
+
+
+---
+
+## 🧪 动手练习（配套脚本）
+
+读完这一轮，去跑配套练习，把核心机理亲手验证一遍——Michaelis–Menten 两极限 + 线性 vs 非线性稳态：
+
+```bash
+cd exercises && python3 round2_exercise.py
+```
+
+→ 脚本：[`exercises/round2_exercise.py`](exercises/round2_exercise.py) ｜ 全部练习说明见 [`exercises/README.md`](exercises/README.md)

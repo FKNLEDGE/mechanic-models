@@ -458,3 +458,16 @@ AquaCrop = 框架① + ② + ③：
 - **RothC 速率常数可被率定**：标准 k 值（10/0.3/0.66/0.02）来自 Rothamsted 田间试验，但在不同土壤（如火山灰土 andosol、水稻土、干旱区）常需重新率定，文献中 HUM 的 k 被改到 0.005–0.01（而非 0.02）的例子不少。把它们当"通用真理"会出错。
 - **Euler 的局限**：本章用显式 Euler 主要为教学直观。真实工程中对刚性（stiff）或振荡问题，显式 Euler 可能需要极小步长或会发散，届时应换隐式方法（如后向 Euler，无条件稳定）或更高阶方法（如 Runge–Kutta）。RothC 用精确指数解正是为绕开这一陷阱。
 - **案例数字的来源层级**：森林→牧场 +54%、棉花 540–740 mm 等数字来自具体研究的特定地点与假设，不可外推为普适结论。藜麦"完全灌溉生物量 WP 反低约 9%"被归因于该试验点的养分耗竭，是该系统的特殊性而非普遍规律。另需注意：Geerts et al. (2009) 主要是模型率定/验证论文，其藜麦亏缺灌溉的"操作性 kg/m³ 水分生产力图表与灌溉时刻表"实际出自后续的 Geerts, Raes & Garcia (2010, Agric. Water Manage. 98:213–216)。
+
+
+---
+
+## 🧪 动手练习（配套脚本）
+
+读完这一轮，去跑配套练习，把核心机理亲手验证一遍——守恒律 + 显式 Euler 收敛性 + 质量守恒：
+
+```bash
+cd exercises && python3 round1_exercise.py
+```
+
+→ 脚本：[`exercises/round1_exercise.py`](exercises/round1_exercise.py) ｜ 全部练习说明见 [`exercises/README.md`](exercises/README.md)

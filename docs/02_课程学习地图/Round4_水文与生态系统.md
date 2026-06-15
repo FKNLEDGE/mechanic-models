@@ -538,3 +538,16 @@ CLM 是一个**参数数以百计**的庞然大物。Dagon et al. (2020, ASCMO 6
 - Bondeau, A. et al. (2007). *Modelling the role of agriculture for the 20th century global terrestrial carbon balance.* GCB 13:679–706.（LPJmL）
 - Lawrence, D.M. et al. (2019). *The Community Land Model Version 5.* JAMES 11:4245–4287.
 - Penman, H.L. (1948); Monteith, J.L. (1965). 能量平衡 / 蒸散的 Penman-Monteith 框架。
+
+
+---
+
+## 🧪 动手练习（配套脚本）
+
+读完这一轮，去跑配套练习，把核心机理亲手验证一遍——SCS-CN 产流 + Farquhar Ac/Aj 交叉：
+
+```bash
+cd exercises && python3 round4_exercise.py
+```
+
+→ 脚本：[`exercises/round4_exercise.py`](exercises/round4_exercise.py) ｜ 全部练习说明见 [`exercises/README.md`](exercises/README.md)

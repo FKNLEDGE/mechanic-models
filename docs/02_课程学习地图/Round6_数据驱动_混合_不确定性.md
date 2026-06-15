@@ -488,3 +488,16 @@ Round 1–5 的过程模型，**正是引导 ML 的那份"知识"**。没有 Rou
 - Feng, D. et al. (2022). Differentiable, Learnable, Regionalized Process-Based Models… *Water Resources Research* 58(10):e2022WR032404.
 
 **两处需向读者透明声明的准确性说明**：(1) Jeong et al. (2016) 原文并未报告玉米的"R²"，其报告的是 EF=0.76、d=0.92、Pearson r=0.88（r²≈0.77）；唯一明确的"方差解释 96%"针对全球小麦。课程项目中若曾写"corn-belt R²≈0.72–0.80"应据此修正。(2) Jeong 摘要的"RMSE 6–14% vs 14–49%"为四舍五入概括，逐案例实测为 RF 5.8–16.7%、MLR 13.8–49.2%。
+
+
+---
+
+## 🧪 动手练习（配套脚本）
+
+读完这一轮，去跑配套练习，把核心机理亲手验证一遍——随机森林 + GP 仿真器（带不确定性）：
+
+```bash
+cd exercises && python3 round6_exercise.py
+```
+
+→ 脚本：[`exercises/round6_exercise.py`](exercises/round6_exercise.py) ｜ 全部练习说明见 [`exercises/README.md`](exercises/README.md)

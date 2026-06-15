@@ -451,3 +451,16 @@ plt.tight_layout(); plt.show()
 - **吹绵蚧入侵加州的确切年份史料略有出入**（多在 1868–1880 年代之间），本章只保守陈述其在 1880 年代成为毁灭性害虫这一公认事实。
 - **最小浅湖模型是定性示意**：真实湖泊涉及 N/P、鱼群、水深、风浪、气候等多因子；折叠/滞后的存在与宽度依赖参数（如 Hill 指数 p），p 太小则无多稳态。
 - **跨系统类比要谨慎**：草地↔灌丛、土壤碳多稳态等"多稳态"证据强弱不一，部分仍有争议；务必区分"理论上可能多稳态"与"该系统已被实证为多稳态"。
+
+
+---
+
+## 🧪 动手练习（配套脚本）
+
+读完这一轮，去跑配套练习，把核心机理亲手验证一遍——SIR 阈值 + Scheffer 迟滞 + 早期预警：
+
+```bash
+cd exercises && python3 round5_exercise.py
+```
+
+→ 脚本：[`exercises/round5_exercise.py`](exercises/round5_exercise.py) ｜ 全部练习说明见 [`exercises/README.md`](exercises/README.md)
