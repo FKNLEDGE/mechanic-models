@@ -83,6 +83,7 @@
 - [总览 + 从零到一外部学习路线](docs/05_权威资料与延伸阅读/README.md) — **🥇 每个方向"从这里开始"一张表** + 一条全程免费的外部自学路线（每步配本指南对应 Round/Lab）。
 - [分主题资料库](docs/05_权威资料与延伸阅读/01_分主题资料库.md) — 6 大主题、每个模型指向**官方主页 / 公认教材 / 公开课 / 官方代码包**，按入门→进阶→高级分级。
 - [公开数据集与可复现工具](docs/05_权威资料与延伸阅读/02_公开数据集与可复现工具.md) — NASA POWER、FLUXNET、Rothamsted e-RA、AgMIP、SoilGrids… + The Turing Way / Binder / Zenodo（每条标"喂给哪个 Lab"）。
+- [权威开源项目](docs/05_权威资料与延伸阅读/03_权威开源项目.md) — 能 clone 即跑的模型实现（PCSE、AquaCrop-OSPy、SoilR、SWAT+…）+ 数据工具栈（xarray、Project Pythia）+ **"怎么判断一个开源项目靠不靠谱"小白清单**。
 
 ---
 

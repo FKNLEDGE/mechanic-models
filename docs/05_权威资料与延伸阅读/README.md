@@ -6,13 +6,14 @@
 >
 > 这里**只收第一梯队**：各模型官方主页/文档、领域公认教材、知名学者公开课、官方代码包、权威机构数据集。
 
-本章三个文件：
+本章四个文件：
 
 | 文件 | 内容 |
 |---|---|
 | **本页（总览）** | 怎么用 · 🥇 每个方向"从这里开始" · **从零到一的外部学习路线** |
 | [01 · 分主题资料库](01_分主题资料库.md) | 按 6 大主题(数学地基/土壤碳/作物/水文光合/动力系统/ML-不确定性)，每个模型指向官方与经典资料 |
 | [02 · 公开数据集与可复现工具](02_公开数据集与可复现工具.md) | 喂给模型的气象/土壤/通量/产量数据 + 让结果可复现的工具链 |
+| [03 · 权威开源项目](03_权威开源项目.md) | 能 clone 即跑的模型实现 + 数据工具栈 + **"怎么判断项目靠不靠谱"小白清单** |
 
 ---
 
@@ -41,6 +42,8 @@
 | 🔄 动力系统/突变 | [Strogatz 公开课](https://www.youtube.com/playlist?list=PLbN57C5Zdl6j_qJA-pARJnKsmROzPnO9V) | 平衡/振荡/分岔直觉的最佳来源，数学友好 |
 | 🤖 ML/不确定性 | [scikit-learn 指南](https://scikit-learn.org/stable/user_guide.html) / [VanderPlas《PDSH》](https://jakevdp.github.io/PythonDataScienceHandbook/) | 经典 ML 权威参考 + 最平易近人的免费教材 |
 | 📊 数据 | [NASA POWER](https://power.larc.nasa.gov/data-access-viewer/) | 免注册一键下全球气象，直接喂作物模型 |
+| 🧰 数据处理 | [xarray](https://github.com/pydata/xarray) / [Project Pythia](https://foundations.projectpythia.org/) | 把 NetCDF/遥感数据读进来、画出来的核心栈（详见 03） |
+| 🧩 开源项目 | [03 · 权威开源项目](03_权威开源项目.md) | clone 即跑的模型实现 + "怎么挑靠谱项目"清单 |
 | 🔁 可复现 | [The Turing Way](https://book.the-turing-way.org/) | 让你的模型实验别人能重跑的方法论底座 |
 
 ---
@@ -71,6 +74,10 @@ Round 练习 / Lab，形成"看懂 → 动手"闭环**。全程用上表的免�
   FAO AquaCrop（GUI，参数少）跑一季玉米；或 PCSE/WOFOST 文档
   ↳ 配套：Round 3 + Lab 2（NASA POWER 真实气象，潜在 vs 水分限制）
 
+第 4.5 步 · 学会"喂数据"（可选但强烈推荐，2–3 天）
+  Project Pythia Foundations 学 xarray → 把 ERA5/MODIS 的 NetCDF 读进来、画出来
+  ↳ 配套：02 公开数据集 + 03 数据工具栈
+
 第 5 步 · 动力系统与突变（2–3 天）
   Strogatz 公开课前 5 讲 + 玩 MIT Mathlets 分岔交互
   ↳ 配套：Round 5 + round5_exercise.py（SIR 阈值、Scheffer 迟滞、早期预警）
@@ -94,6 +101,7 @@ Round 练习 / Lab，形成"看懂 → 动手"闭环**。全程用上表的免�
 
 - **不重复**：本指南正文负责"用大白话讲懂 + 给最小可跑代码"；这一章负责"指向**官方/权威的完整版**"。
 - **要数据**？→ [02 · 公开数据集](02_公开数据集与可复现工具.md)。
+- **想要能 clone 即跑的开源项目 / 代码**？→ [03 · 权威开源项目](03_权威开源项目.md)（含"怎么判断一个开源项目靠不靠谱"小白清单）。
 - **某个词不懂**？→ [术语速查表](../00_新手上路/术语表.md)；**某个符号不懂**？→ [数学补给站](../00_新手上路/数学补给站.md)。
 - **诚实提醒**：外部链接会随官网改版变动；若某条失效，用资源名称在官方主页或搜索引擎重搜即可——
   名称都是稳定的，且都选了各领域**公认第一梯队**的资料。
