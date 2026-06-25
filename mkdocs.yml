@@ -1,0 +1,81 @@
+site_name: 农业生态系统过程模型 · 小白自学指南
+site_description: 从零基础到能动手做研究的作物 / 生态系统过程模型自学指南（用代码做苦力，用农学做灵魂）
+docs_dir: docs
+site_dir: site
+
+theme:
+  name: material
+  language: zh
+  features:
+    - navigation.sections
+    - navigation.top
+    - navigation.indexes
+    - content.code.copy
+    - search.suggest
+    - toc.follow
+  palette:
+    - scheme: default
+      primary: green
+      accent: light green
+      toggle:
+        icon: material/weather-night
+        name: 切换到深色
+    - scheme: slate
+      primary: green
+      accent: light green
+      toggle:
+        icon: material/weather-sunny
+        name: 切换到浅色
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - tables
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - toc:
+      permalink: true
+
+validation:
+  nav:
+    omitted_files: info
+  links:
+    absolute_links: ignore
+    unrecognized_links: ignore
+
+nav:
+  - 首页: index.md
+  - 00 · 新手上路:
+      - 学习打卡清单（进度 + 难度分流）: 00_新手上路/学习打卡清单.md
+      - 数学补给站（大白话讲符号）: 00_新手上路/数学补给站.md
+      - 术语速查表: 00_新手上路/术语表.md
+      - 安装与常见报错: 00_新手上路/安装与常见报错.md
+  - 01 · 小白教程:
+      - 第1部分 · 模型怎么算、怎么搭: 01_小白教程/第1部分_模型怎么算怎么搭.md
+      - 第2部分 · 写代码与调参数: 01_小白教程/第2部分_写代码与调参数.md
+      - 第3部分 · AI 结合与突变: 01_小白教程/第3部分_AI结合与突变.md
+      - 第4部分 · 从想法到可复现论文: 01_小白教程/第4部分_从想法到可复现论文.md
+  - 02 · 课程学习地图:
+      - 学习地图总纲（20 模型 / 7 框架）: 02_课程学习地图/00_学习地图总纲_20模型7框架.md
+      - 课程速查地图 · 一页纸: 02_课程学习地图/课程速查地图_一页纸.md
+      - Round 1 · 地基（守恒律 + 最简模型）: 02_课程学习地图/Round1_地基_守恒律与最简模型.md
+      - Round 2 · 土壤生物地球化学: 02_课程学习地图/Round2_土壤生物地球化学.md
+      - Round 3 · 作物生长与产量: 02_课程学习地图/Round3_作物生长与产量.md
+      - Round 4 · 水文与生态系统: 02_课程学习地图/Round4_水文与生态系统.md
+      - Round 5 · 动力系统与临界转变: 02_课程学习地图/Round5_动力系统与临界转变.md
+      - Round 6 · 数据驱动、混合与不确定性: 02_课程学习地图/Round6_数据驱动_混合_不确定性.md
+      - 六轮配套练习脚本: 02_课程学习地图/exercises/README.md
+  - 03 · 动手实操包:
+      - 实操包说明（README + 4 个 lab）: 03_动手实操包/README.md
+  - 04 · 深度报告:
+      - 三份报告综合摘要（速查）: 04_深度报告/00_三份报告综合摘要.md
+      - 报告1 · 计算内核与软件架构: 04_深度报告/报告1_计算内核与软件架构.md
+      - 报告2 · 可运行代码·率定·混合ML·突变: 04_深度报告/报告2_可运行代码_率定_混合ML_突变.md
+      - 报告3 · 模型构建全链路: 04_深度报告/报告3_模型构建全链路.md
+  - 05 · 权威资料与延伸阅读:
+      - 总览 + 从零到一外部学习路线: 05_权威资料与延伸阅读/README.md
+      - 分主题资料库（每个模型去哪学）: 05_权威资料与延伸阅读/01_分主题资料库.md
+      - 公开数据集与可复现工具: 05_权威资料与延伸阅读/02_公开数据集与可复现工具.md
+      - 权威开源项目（clone 即跑）: 05_权威资料与延伸阅读/03_权威开源项目.md
